@@ -1,6 +1,6 @@
 #используються хуки общепринятые, с серверов
 
-exclude: core/
+#exclude: core/
 
 repos:
 -   repo: https://github.com/pre-commit/pre-commit-hooks
