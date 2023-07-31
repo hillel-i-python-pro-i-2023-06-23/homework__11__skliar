@@ -88,6 +88,10 @@ def create_users(request):
             users_data.append(user)
 
         context = {"users_data": users_data}  # Передаем список пользователей в контекст
-        return render(request=request, template_name="index.html", context=context)
+        return render(
+            request=request,
+            template_name="create_users.html",
+            context=context,
+        )
     else:
         return HttpResponseNotAllowed(["POST"])
